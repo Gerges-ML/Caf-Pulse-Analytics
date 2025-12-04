@@ -1,0 +1,21 @@
+Analysis summary:
+
+notes: ['No order id column found; synthetic order_id created.']
+sheets: ['Sheet1']
+main_sheet: Sheet1
+orig_row_count: 2000
+inspection: {'columns': ['Timestamp', 'Service Type', 'Channel', 'Revenue', 'Ad Spend', 'Conversions', 'Customer Type', 'Category'], 'dtypes': {'Timestamp': 'datetime64[ns]', 'Service Type': 'object', 'Channel': 'object', 'Revenue': 'float64', 'Ad Spend': 'float64', 'Conversions': 'int64', 'Customer Type': 'object', 'Category': 'object'}, 'missing_perc': {'Timestamp': 0.0, 'Service Type': 0.0, 'Channel': 0.0, 'Revenue': 0.0, 'Ad Spend': 0.0, 'Conversions': 0.0, 'Customer Type': 0.0, 'Category': 0.0}}
+datetime_candidate_used: Timestamp
+amount_col: Revenue
+order_id_col: None
+item_col: Category
+kpis: {'total_revenue': 208311.72999999998, 'num_orders': 2000, 'AOV': 104.15586499999999}
+kpis_table_path: /mnt/data/analysis_output/kpis.csv
+plots: {'sales_by_hour.png': '/mnt/data/analysis_output/sales_by_hour.png', 'sales_by_day.png': '/mnt/data/analysis_output/sales_by_day.png', 'heatmap_day_hour.png': '/mnt/data/analysis_output/heatmap_day_hour.png', 'sales_by_time_bucket.png': '/mnt/data/analysis_output/sales_by_time_bucket.png'}
+top_items_csv: /mnt/data/analysis_output/top_items.csv
+
+Recommendations:
+- Top performing hour: 13:00. Consider upsell/premium items during this hour.
+- Top performing day: Monday. Consider special weekend/weekday bundles accordingly.
+- Low-performing time bucket: Evening (19-23). Suggest promotions (e.g., discounts, combos, happy hour) targeted to Evening (19-23).
+- Low-performing time bucket: Afternoon (16-19). Suggest promotions (e.g., discounts, combos, happy hour) targeted to Afternoon (16-19).
